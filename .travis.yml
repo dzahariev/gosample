@@ -12,5 +12,5 @@ script:
  #- ginkgo -r --cover --trace --race
  - go test ./... -cover
  
- notifications:
-    slack: ciintegration:AC6xEir9MAtxFTkOmcJs38Gm
+notifications:
+  slack: ciintegration:AC6xEir9MAtxFTkOmcJs38Gm
