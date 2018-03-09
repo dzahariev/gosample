@@ -1,0 +1,16 @@
+language: go
+
+go:
+  - 1.6.x
+  - 1.7.x
+  - 1.8.x
+  - 1.9.x
+
+before_install:
+  - go get github.com/onsi/gomega
+  - go get github.com/onsi/ginkgo/ginkgo
+
+script:
+ #- ginkgo -r --cover --trace --race
+ - go test ./... -cover
+ 
