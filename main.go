@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"time"
+
 	"github.com/dzahariev/gosample/functions"
 )
 
 func init() {
-	fmt.Println("Initialization ... %d")
+	fmt.Println("Initialization ...")
 }
 
 func Dummy(dummy string) string {
