@@ -8,6 +8,7 @@ install:
   - go get github.com/onsi/gomega
   - go get github.com/onsi/ginkgo/ginkgo
   - go get github.com/alecthomas/gometalinter
+  - go get github.com/GoASTScanner/gas/cmd/gas/...
 
 before_script:
   - gometalinter --install --update
@@ -20,6 +21,9 @@ script:
 
   #Execute tests
   - go test ./... -cover
+  
+  #Execute security scan
+  - gas ./...
   
 notifications:
   slack: ciintegration:AC6xEir9MAtxFTkOmcJs38Gm
