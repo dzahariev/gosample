@@ -16,14 +16,10 @@ script:
   #- ginkgo -r --cover --trace --race
 
   # Execute static checks
-  - echo "Static checks execution"
   - gometalinter  ./...
-  - echo "End static checks"
 
   #Execute tests
-  - echo "Test execution"
   - go test ./... -cover
-  - echo "End test execution"
   
 notifications:
   slack: ciintegration:AC6xEir9MAtxFTkOmcJs38Gm
