@@ -27,4 +27,4 @@ script:
   - gas ./...
 
 notifications:
-  slack: ciintegration:AC6xEir9MAtxFTkOmcJs38Gm
+  slack: ciintegration:$SLACK_TOKEN
