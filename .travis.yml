@@ -16,8 +16,6 @@ before_script:
   - gometalinter --install --update
 
 script:
-  #- ginkgo -r --cover --trace --race
-
   # Execute static checks
   - gometalinter  ./...
 
